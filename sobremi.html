@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acá les hablo un poco sobre mí, mostrando algunos de mis hobbies e información más en detalle sobre mi carrera">
+    <meta name="keywords" content="Design, UX, Industrial, Aesthetics, Digital, Portfolio, Argentina, About, Render">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="sass/estilos.css">
+    <!--Tipografía Roboto bold-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">    
+    <title>Sobre mí</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand img-fluid" href="index.html"><img src="assets/img/logo_ezequiel.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-link" href="index.html#intro">Intro</a>
+            <a class="nav-link" href="index.html#sobre_mi">Sobre mí</a>
+            <a class="nav-link" href="index.html#proyectos">Proyectos</a>
+            <a class="nav-link" href="index.html#contacto">Contacto</a>
+            <a class="nav-link" href="https://www.behance.net/eze-escandea38"><img src="assets/img/behance_logo.png" alt=""></a>
+            <a class="nav-link" href="https://www.linkedin.com/in/ezequiel-escandarani"><img src="assets/img/linkedin_logo.png" alt=""></a>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html#sobre_mi">Intro</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Sobre mí</li>
+        </ol>
+    </nav>
+
+    <main class="sobreMi">
+    <h1>Sobre mí</h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <section class="general container-fluid cc">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-7">
+                            <h2>Viajes</h2>
+                            <p>Me gusta viajar para tener experiencias fuera de la
+                            rutina, conociendo paisajes nuevos, interactuando
+                            con personas y conociendo culturas.</p>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <img src="assets/img/sobremiviajes.png" class="img-fluid" alt="viajes en Salta y Shanghai">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="carousel-item">
+            <section class="general container-fluid cc">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-7">
+                            <h2>Renders</h2>
+                            <p>Me apasiona todo lo que es digital, y por ende, me
+                            gusta hacer renders para presentar mis propios
+                            proyectos.
+                            Creo que para enamorar a los usuarios y los clientes,
+                            tiene que ser con una imágen que impacte
+                            desde el primer segundo. Para lograr este efecto,
+                            hay que hacerlo mediante el primer sentido con el
+                            que uno interactúa con un producto, el visual.</p>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <img src="assets/img/sobremirenders.png" class="img-fluid" alt="renders de salero y cafetera">
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+    
+
+
+
+        <section id="estudios">
+            <h2>Estudios</h2>
+            <table>
+                <tr>
+                    <th>Institución</th>
+                    <th>Carrera</th>
+                    <th>Años</th>
+                </tr>
+                <tr>
+                    <td>ORT</td>
+                    <td>Bachillerato orientado a construcciones</td>
+                    <td>2010-2016</td>
+                </tr>
+                <tr>
+                    <td>UADE</td>
+                    <td>Licenciatura en diseño industrial</td>
+                    <td>2016-actualidad</td>
+                </tr>
+                <tr>
+                    <td>Coderhouse</td>
+                    <td>UX/UI</td>
+                    <td>2020-actualidad</td>
+                </tr>
+            </table>
+            <a href="index.html#sobre_mi"><button>Volver a home</button></a>
+        </section>
+    </main>
+    <footer id="contacto">
+        <h4>Contacto</h4>
+        <h2>Trabajemos juntos</h2>
+        <p>Disponible para propuestas de trabajo, proyecto, colaboraciones</p>
+        <a href="" class="CV"><button>Descargar CV</button></a>
+        <p>eze@escandarani.com.ar</p>
+        <div class="Redes">
+            <a href="https://www.linkedin.com/in/ezequiel-escandarani"><img src="assets/img/linkedin_logo.png" alt="LinkedIn"></a>
+            <a href="https://www.behance.net/eze-escandea38"><img src="assets/img/behance_logo.png" alt="Behance"></a>
+        </div>
+    </footer>
+    <div class="linkTerms">
+        <a href="newsletter.html">Inscribite a mi newsletter</a>
+        <a href="termsycond.html">Términos y condiciones</a>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

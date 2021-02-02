@@ -1,0 +1,398 @@
+//variables
+$celeste: #19D3DA;
+
+$texto: #373A40;
+
+$textoSecundario: #686D76;
+
+//textos
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: $texto;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: $texto;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h3 {
+    color: $texto;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h4 {
+    color: $textoSecundario;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+p {
+    font-size: 18px;
+    font-weight: normal;
+    color: $textoSecundario;
+}
+
+a {
+    font-size: 18px;
+    font-weight: normal;
+    color: $textoSecundario;
+    text-decoration: none;
+}
+
+/*******Acá empieza el nav*********/
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+    .nav-link {
+        margin: 5px;
+    }
+    
+    .nav-link:hover {
+        text-decoration: underline $celeste 4px;
+    }
+    
+    .nav-link:active {
+        text-decoration: none;
+        font-weight: 800;
+    }
+    
+}
+
+/*******Acá empieza intro*********/
+
+#intro {
+    background-image: url(../assets/img/imagen_intro.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*******Acá empieza sobre mí*********/
+
+#sobre_mi {
+    height: 100vh;
+    padding: 120px 60px;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+button{
+    padding: 12px 10px;
+    text-decoration: none;
+    background-color: $celeste;
+    border: none;
+    color: #fdfdfd;
+    font-size: 2.5vmin;
+    font-weight: normal;
+}
+
+button:hover {
+    padding: 12px 10px;
+    text-decoration: none;
+    background-color: #47e2e7;
+    border: none;
+    color: #fdfdfd;
+    font-size: 2.5vmin;
+    font-weight: normal;
+}
+
+button:active {
+    padding: 12px 10px;
+    text-decoration: none;
+    background-color: #218e92;
+    border: none;
+    color: #fdfdfd;
+    font-size: 2.5vmin;
+    font-weight: normal;
+}
+
+
+.linkSobreMi {
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: normal;
+    color: #686D76;
+}
+
+/*******Acá empiezan los proyectos*********/
+
+
+#proyectos {
+    padding: 33px 60px;
+    background-color: #F5F5F5;
+
+    .inicioDeSeccion h4 {
+        padding-bottom: 10px;
+    }
+
+    .inicioDeSeccion h2 {
+        padding-bottom: 30px;
+    }
+
+    .tituloDisciplina {
+        padding-bottom: 10px;
+    }
+
+    .proyectos {
+        margin-bottom: 30px;
+
+        .proyecto {
+            background-color: #ECECEC;
+            border-radius: 5px;
+            padding: 20px;
+            transition: all 0.1s ease 0s;
+        }
+
+        .proyecto:hover {
+            border: solid 2px #19D3DA;
+            transform: scale(1.05);
+        }
+
+        .proyecto a {
+            text-decoration: none;
+        }
+
+        .proyecto a img {
+            width: 100%;
+        }
+    }
+}
+
+
+/*******Acá empieza el footer*********/
+
+#contacto {
+    padding: 77px 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.linkTerms {
+    width: 100%;
+    text-decoration: none;
+    background-color: #19D3DA;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 60px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.linkTerms a {
+    color: white;
+    transition: all 0.2s ease 0s;
+}
+
+.linkTerms a:hover {
+    text-decoration: underline white 4px;
+
+}
+
+/**********************SECCIÓN SOBREMI*****************************/
+
+#carouselExampleIndicators {
+    padding: 20px 60px 40px 60px;
+    background-color: rgb(192, 192, 192);
+    height: 100vh;
+}
+
+.sobreMi {
+    padding: 50px 60px;
+}
+
+.general {
+    padding: 70px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.general .texto {
+    max-width: 650px;
+}
+
+#estudios {
+    padding-top: 120px;
+}
+
+/******acá muestro mis estudios*****/
+
+table {
+    width: 100%;
+}
+
+th {
+    color: #EEEEEE;
+    background-color: #686D76;
+    padding: 10px;
+}
+
+td {
+    background-color: #A4A7AD;
+    padding: 10px;
+}
+
+#estudios button {
+    margin-top: 20px;
+}
+
+/**********************SECCIÓN PROYECTO*****************************/
+
+.presentacion {
+    padding: 40px 60px 20px 60px;
+}
+
+#proyecto {
+    background-color: #ECECEC;
+padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.finDelProyecto {
+    display: flex;
+    justify-content: space-around;
+}
+
+.finDelProyecto a img {
+    width: 48px;
+
+}
+
+
+
+/*******************SECCION NEWSLETTER******************/
+
+.breadcrumb {
+    padding: 90px 60px 20px 60px;
+}
+
+.inicioNewsletter {
+    padding: 30px 60px 20px 60px;
+}
+
+form {
+    padding: 0px 60px;
+}
+
+.btn-primary {
+    background-color: #19D3DA;
+    border: none;
+    border-radius: none;
+}
+
+.btn-primary:hover {
+    background-color: #42ecf1;
+    box-shadow: #373A40;
+}
+
+.btn-primary:active {
+    background-color: #0c8a8f;
+    border: none;
+}
+
+
+/*****************SECCION TERMSYCOND*************/
+
+.terms {
+    padding: 120px 60px 20px 60px;
+}
+
+.terms .termsInicio {
+    margin-bottom: 20px;
+}
+
+.volver {
+    margin: 20px auto 120px 60px;
+}
+
+
+/**********************MEDIA QERIES***********************/
+
+@media screen and (max-width: 576px){
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    a {
+        font-size: 18px;
+    }
+}
