@@ -162,8 +162,12 @@ button:active {
     }
 
     .proyectos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 16px;
+        row-gap: 16px;
         margin-bottom: 30px;
-
+    
         .proyecto {
             background-color: #ECECEC;
             border-radius: 5px;
@@ -185,6 +189,7 @@ button:active {
         }
     }
 }
+
 
 
 /*******Acá empieza el footer*********/
@@ -343,6 +348,79 @@ form {
 
 /**********************MEDIA QERIES***********************/
 
+
+@media screen and (max-width: 1280px){
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    a {
+        font-size: 18px;
+    }
+
+    #proyectos {
+        padding: 33px 60px;
+        background-color: #F5F5F5;
+    
+        .inicioDeSeccion h4 {
+            padding-bottom: 10px;
+        }
+    
+        .inicioDeSeccion h2 {
+            padding-bottom: 30px;
+        }
+    
+        .tituloDisciplina {
+            padding-bottom: 10px;
+        }
+    
+        .proyectos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 16px;
+            row-gap: 16px;
+            margin-bottom: 30px;
+        
+            .proyecto {
+                background-color: #ECECEC;
+                border-radius: 5px;
+                padding: 20px;
+                transition: all 0.1s ease 0s;
+            }
+    
+            .proyecto:hover {
+                border: solid 2px #19D3DA;
+                transform: scale(1.05);
+            }
+    
+            .proyecto a {
+                text-decoration: none;
+            }
+    
+            .proyecto a img {
+                width: 100%;
+            }
+        }
+    }   
+}
+
 @media screen and (max-width: 576px){
 
     h1 {
@@ -368,31 +446,49 @@ form {
     a {
         font-size: 16px;
     }
-}
 
-@media screen and (max-width: 768px){
-
-    h1 {
-        font-size: 28px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    h3 {
-        font-size: 16px;
-    }
-
-    h4 {
-        font-size: 16px;
-    }
-
-    p {
-        font-size: 18px;
-    }
-
-    a {
-        font-size: 18px;
-    }
+    #proyectos {
+        padding: 33px 60px;
+        background-color: #F5F5F5;
+    
+        .inicioDeSeccion h4 {
+            padding-bottom: 10px;
+        }
+    
+        .inicioDeSeccion h2 {
+            padding-bottom: 30px;
+        }
+    
+        .tituloDisciplina {
+            padding-bottom: 10px;
+        }
+    
+        .proyectos {
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 16px;
+            row-gap: 16px;
+            margin-bottom: 30px;
+        
+            .proyecto {
+                background-color: #ECECEC;
+                border-radius: 5px;
+                padding: 20px;
+                transition: all 0.1s ease 0s;
+            }
+    
+            .proyecto:hover {
+                border: solid 2px #19D3DA;
+                transform: scale(1.05);
+            }
+    
+            .proyecto a {
+                text-decoration: none;
+            }
+    
+            .proyecto a img {
+                width: 100%;
+            }
+        }
+    }   
 }
