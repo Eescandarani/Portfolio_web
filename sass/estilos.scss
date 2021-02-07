@@ -96,7 +96,19 @@ a {
 
 #sobre_mi {
     height: 100vh;
-    padding: 120px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.columna1 {
+    max-width: 650px;
+}
+
+.columna2 {
+    max-width: 650px;
 }
 
 .links {
@@ -375,8 +387,29 @@ form {
         font-size: 18px;
     }
 
+    #sobre_mi {
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+    
+    .columna1 {
+        max-width: 650px;
+    }
+    
+    .columna2 {
+        max-width: 650px;
+    }
+    
+    .links {
+        margin-top: 20px;
+    }
+
     #proyectos {
-        padding: 33px 60px;
+        padding: 33px 30px;
         background-color: #F5F5F5;
     
         .inicioDeSeccion h4 {
@@ -448,7 +481,7 @@ form {
     }
 
     #proyectos {
-        padding: 33px 60px;
+        padding: 33px 20px;
         background-color: #F5F5F5;
     
         .inicioDeSeccion h4 {
